@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nathan Williams Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      border: 6px solid white;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .button, .originalbutton {
+      background-color: #dfdfdf;
+      border: 3px solid #3b3b3b;
+      color: black;
+      padding: 24px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      font-size: 16px; 
+      transition-duration: 0.5s;
+      cursor: pointer;
+    }
+
+    .button:hover, .originalbutton:hover {
+      background-color: white;
+      border: 3px solid white;
+      color: black;
+    }
+
+    a:hover h1 {
+      text-decoration: underline;
+      color: blue;
+      transition-duration: 0.4s;
+    }
+
+    a:hover h3 {
+      text-decoration: underline;
+      color: blue;
+      transition-duration: 0.4s;
+    }
+
+    h1 {
+      padding: 20px;
+    }
+
+    h3 {
+      padding: 10px;
+    }
+
+    ul {
+      margin: 6px;
+      padding: 12px;
+      padding-bottom: 20px
+    }
+
+    li {
+      margin: 6px;
+      padding: 0px;
+      text-align: left;
+    }
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+      border: 3px solid #3b3b3b;
+    }
+
+    header {
+      background-color: #3b3b3b;
+      padding: 40px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    section {
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      background-color: #3b3b3b;
+    }
+
+    samples {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: #ccc;
+    }
+
+    originals {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: #ccc;
+    }
+
+    footer {
+      background-color: #3b3b3b;
+      padding: 54px;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Writing Samples</h2>
+  </header>
+
+  <section>
+    <samples>
+      <a href="https://wiki.gbl.gg/w/Pokemon:_Close_Combat/Netplay" class="button wiki-netplay" target="_blank">
+        <h1>Wiki Netplay Guide</h1>
+        <p>Rewrote the official wiki's page on how to play Pokemon Close Combat online. Improvements include:</p>
+        <ul>
+          <li>New organization to help users find what they're looking for quickly</li>
+          <li>Reference images with highlighted sections to help users follow technical instructions</li>
+          <li>Doubled information devoted to teaching online interface</li>
+          <li><code><span style="background-color:lightgray">Text markup</span></code> to help users see what they're supposed to click</li>
+          <li>Simpler language to help users understand instructions</li>
+          <li>Rewritten text in line with Microsoft's Writing Style Guide</li>
+        </ul> 
+      </a>
+    </samples>
+
+    <samples>
+      <a href="https://docs.google.com/document/d/1OfFHgpJPk5wpbiFlURuTAax5x5J5_uTWh2tmVcWfrzQ/preview" class="button mla-guide" target="_blank">
+        <h1>MLA Formatting Guide</h1>
+        <p>Created my own guide for teaching middle and high school students how to format their essays in MLA. It includes:</p>
+        <ul>
+          <li>Simple, concise language to help students new to English or computers follow along</li>
+          <li>Step-by-step instructions to help students quickly find information they need</li>
+          <li>Screenshots of Google Docs with highlighted sections to show students where on their screen to click</li>
+          <li>Model MLA examples for students to compare their work against</li>
+        </ul> 
+      </a>
+    </samples>
+
+    <samples>
+      <a href="https://docs.google.com/document/d/1VfmWU3mJ_twWdeqEhUICCPSiK7uR3Sw37jOnduPN4KY/preview" class="button ai-logic" target="_blank">
+        <h1>AI Logic Documentation</h1>
+        <p>Converted gaming content created haphazardly by many contributors into organized documentation. Improvements include...</p> 
+        <ul>
+          <li>Concise writing that, despite adding topics, shortens document by more than 1,000 words</li>
+          <li>Table of contents with information organized into discrete topics to help users navigate</li>
+          <li>Embedded hyperlinks to help users quickly jump to relevant info</li>
+          <li>Tables to help users visualize AI decisions more clearly (see example below)</li>
+          <li>Consistent language that always refers to each concept by the same name</li>
+        </ul> 
+      </a>
+    </samples>
+  </section>
+
+  <section>
+    <originals>
+      <a href="https://wiki.gbl.gg/index.php?title=Pokemon:_Close_Combat/Netplay&oldid=348635" class="originalbutton wiki-netplay-original" target="_blank">
+        <h3>Original Wiki Netplay Guide</h3>
+        <p style="padding-bottom: 10px">Click here to see what the wiki's netplay guide looked like before I revised it.</p>
+      </a>
+    </originals>
+
+    <originals>
+      <a href="https://docs.google.com/document/d/1XQmlSyccw-OTT2hFPMXQSA2gYSJIeRnUZscH50mG6vg/preview" class="originalbutton ai-logic-original" target="_blank">
+        <h3>Original AI Logic Documentation</h3>
+        <p style="padding-bottom: 10px">Click here to see what the AI logic's documentation looked like before I revised it.</p>
+      </a>
+    </originals>
+  </section>
+
+  <section>
+    <img src="before.png" alt="Before and After">
+  </section>
+
+  <footer>
+    <p>Nathan Williams<br>
+    williamsnenglish@gmail.com<br>
+    (203) 446-7512</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.button, .originalbutton');
+    
+    const wikiButton = document.querySelector('.wiki-netplay');
+    const wikiOriginalButton = document.querySelector('.wiki-netplay-original');
+    const mlaButton = document.querySelector('.mla-guide');
+    const aiLogicButton = document.querySelector('.ai-logic');
+    const aiLogicOriginalButton = document.querySelector('.ai-logic-original');
+
+    function darkenButtons(exceptButtons) {
+      buttons.forEach(button => {
+        if (!exceptButtons.includes(button)) {
+          button.style.filter = 'brightness(3%) opacity(0.65)';
+        }
+      });
+    }
+
+    function resetButtonDarkness() {
+      buttons.forEach(button => {
+        button.style.filter = 'none';
+      });
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('mouseenter', () => {
+        if (button === wikiButton) {
+          darkenButtons([wikiButton, wikiOriginalButton]);
+        } else if (button === aiLogicButton) {
+          darkenButtons([aiLogicButton, aiLogicOriginalButton]);
+        } else if (button === mlaButton) {
+          darkenButtons([mlaButton]);
+        }
+      });
+
+      button.addEventListener('mouseleave', () => {
+        resetButtonDarkness();
+      });
+    });
+  </script>
+
+</body>
+</html>
