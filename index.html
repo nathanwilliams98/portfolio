@@ -148,22 +148,9 @@
     </samples>
 
     <samples>
-      <a href="https://docs.google.com/document/d/1OfFHgpJPk5wpbiFlURuTAax5x5J5_uTWh2tmVcWfrzQ/preview" class="button mla-guide" target="_blank">
-        <h1>MLA Formatting Guide</h1>
-        <p>Created my own guide for teaching middle and high school students how to format their essays in MLA. It includes:</p>
-        <ul>
-          <li>Simple, concise language to help students new to English or computers follow along</li>
-          <li>Step-by-step instructions to help students quickly find information they need</li>
-          <li>Screenshots of Google Docs with highlighted sections to show students where on their screen to click</li>
-          <li>Model MLA examples for students to compare their work against</li>
-        </ul> 
-      </a>
-    </samples>
-
-    <samples>
       <a href="https://docs.google.com/document/d/1VfmWU3mJ_twWdeqEhUICCPSiK7uR3Sw37jOnduPN4KY/preview" class="button ai-logic" target="_blank">
         <h1>AI Logic Documentation</h1>
-        <p>Converted gaming content created haphazardly by many contributors into organized documentation. Improvements include...</p> 
+        <p>Converted gaming content created haphazardly by many contributors into organized documentation. Improvements include:</p> 
         <ul>
           <li>Concise writing that, despite adding topics, shortens document by more than 1,000 words</li>
           <li>Table of contents with information organized into discrete topics to help users navigate</li>
@@ -195,6 +182,34 @@
     <img src="before.png" alt="Before and After">
   </section>
 
+  <section>
+    <samples>
+      <a href="https://github.com/FranklyNathan/Emerald-Auctioneer/tree/main?tab=readme-ov-file#readme
+" class="button powershell" target="_blank">
+        <h1>PowerShell Script Documentation</h1>
+        <p>Wrote GitHub documentation for an open-source PowerShell script coded by me. It includes:</p>
+        <ul>
+          <li>Simple instillation instructions to support users unfamiliar with GitHub or PowerShell </li>
+          <li>Concise features list outlining the important functions of the program</li>
+          <li>Friendly, natural writing that speaks directly to the user using second-person pronouns</li>
+        </ul> 
+      </a>
+    </samples>
+
+    <samples>
+      <a href="https://docs.google.com/document/d/1OfFHgpJPk5wpbiFlURuTAax5x5J5_uTWh2tmVcWfrzQ/preview" class="button mla-guide" target="_blank">
+        <h1>MLA Formatting Guide</h1>
+        <p>Created my own guide for teaching middle and high school students how to format their essays in MLA. It includes:</p>
+        <ul>
+          <li>Simple, concise language to help students new to English or computers follow along</li>
+          <li>Step-by-step instructions to help students quickly find information they need</li>
+          <li>Screenshots of Google Docs with highlighted sections to show students where on their screen to click</li>
+          <li>Model MLA examples for students to compare their work against</li>
+        </ul> 
+      </a>
+    </samples>
+    </section>
+
   <footer>
     <p>Nathan Williams<br>
     williamsnenglish@gmail.com<br>
@@ -207,6 +222,7 @@
     const wikiButton = document.querySelector('.wiki-netplay');
     const wikiOriginalButton = document.querySelector('.wiki-netplay-original');
     const mlaButton = document.querySelector('.mla-guide');
+    const powerShellButton = document.querySelector('.powershell');
     const aiLogicButton = document.querySelector('.ai-logic');
     const aiLogicOriginalButton = document.querySelector('.ai-logic-original');
 
@@ -232,6 +248,8 @@
           darkenButtons([aiLogicButton, aiLogicOriginalButton]);
         } else if (button === mlaButton) {
           darkenButtons([mlaButton]);
+        } else if (button === powerShellButton) {
+          darkenButtons([powerShellButton]);
         }
       });
 
