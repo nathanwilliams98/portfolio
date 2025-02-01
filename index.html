@@ -34,8 +34,23 @@
       transition-duration: 0.5s;
       cursor: pointer;
     }
+    
+    .topbutton {
+      background-color: #d1ebe9;
+      border: 3px solid #3b3b3b;
+      color: black;
+      padding: 24px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      font-size: 16px; 
+      transition-duration: 0.5s;
+      cursor: pointer; 
+    }      
 
-    .button:hover, .originalbutton:hover {
+    .button:hover, .originalbutton:hover, .topbutton:hover{
       background-color: white;
       border: 3px solid white;
       color: black;
@@ -134,19 +149,19 @@
     <section>
     <samples>
       <a href="https://github.com/FranklyNathan/Emerald-Auctioneer/tree/main?tab=readme-ov-file#readme
-" class="button powershell" target="_blank">
+" class="topbutton powershell" target="_blank">
         <h1>PowerShell Script Documentation</h1>
         <p>Wrote GitHub documentation for an open-source PowerShell script coded by me.</p>
         <ul>
           <li>Simple installation instructions to support users unfamiliar with GitHub or PowerShell</li>
           <li>Concise features list outlining the important functions of the program</li>
-          <li><code><span style="background-color:lightgray">Text markup</span></code> to help users see what they're supposed to click</li>
+          <li>Friendly, spoken-voice style that guides the reader using second-person pronouns</li>
         </ul> 
       </a>
     </samples>
 
     <samples>
-      <a href="https://docs.google.com/document/d/1OfFHgpJPk5wpbiFlURuTAax5x5J5_uTWh2tmVcWfrzQ/preview" class="button mla-guide" target="_blank">
+      <a href="https://docs.google.com/document/d/1OfFHgpJPk5wpbiFlURuTAax5x5J5_uTWh2tmVcWfrzQ/preview" class="topbutton mla-guide" target="_blank">
         <h1>MLA Formatting Guide</h1>
         <p>Created my own guide for teaching middle and high school students how to format their essays in MLA.</p>
         <ul>
@@ -168,7 +183,7 @@
           <li>New organization to help users find what they're looking for quickly</li>
           <li>Reference images with highlighted sections to help users follow technical instructions</li>
           <li>Twice as much information devoted to teaching online interface</li>
-          <li>Friendly, spoken-voice style that guides the reader using second-person pronouns</li>
+          <li><code><span style="background-color:lightgray">Text markup</span></code> to help users see what they're supposed to click</li>
           <li>Simpler language to help users understand instructions</li>
           <li>Rewritten text in line with Microsoft's Writing Style Guide</li>
         </ul> 
@@ -217,7 +232,7 @@
   </footer>
 
   <script>
-    const buttons = document.querySelectorAll('.button, .originalbutton');
+    const buttons = document.querySelectorAll('.button, .originalbutton, .topbutton');
     
     const wikiButton = document.querySelector('.wiki-netplay');
     const wikiOriginalButton = document.querySelector('.wiki-netplay-original');
